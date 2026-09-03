@@ -11,6 +11,7 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-install \
     mbstring \
     pdo \
+    pdo_mysql \
     opcache \
     && pecl install mongodb-1.21.4 \
     && docker-php-ext-enable mongodb \
